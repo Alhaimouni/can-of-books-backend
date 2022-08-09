@@ -9,3 +9,15 @@ Books are life-changing. They have the power to enlighten, educate, entertain, h
 ## Use this template
 
 Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+
+## Time Estimate
+
+Name of feature: Building CRUD apps with MongoDB
+
+Estimate of time needed to complete: 1.00 hour
+
+Start time: 8:00 pm
+
+Finish time: 9:24 pm
+
+Actual time needed to complete: ~ 1.30 hour 
