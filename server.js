@@ -1,6 +1,5 @@
 'use strict';
 
-
 const bookModel=require('./modules/schema');
 require('dotenv').config();
 const express = require('express');
@@ -11,7 +10,6 @@ app.use(cors());
 
 const PORT = process.env.PORT;
 
-
 mongoose.connect('mongodb://localhost:27017/bookshelf');
 
 // const bookSchema = new mongoose.Schema({
@@ -19,11 +17,9 @@ mongoose.connect('mongodb://localhost:27017/bookshelf');
 //   decription:String,
 //   status:String
 // });
-
 // const Book = mongoose.model('book', bookSchema);
 
 function seedBooks(){
-
   const cleanCode= new Book({
     title: "Clean Code",
   decription:"Demonestrate how to build clean code !",
@@ -50,7 +46,6 @@ function seedBooks(){
 // seedBooks();
 */
 
-// http://localhost:3001/books
 app.get('/books', (request, response) => {
   bookModel.Book.find({},(error,data)=>{
     if(error){
@@ -61,12 +56,6 @@ app.get('/books', (request, response) => {
     }
   });
 });
-
-app.get('/test', (request, response) => {
-
-  response.send('test request received')
-
-})
 
 app.get('*', (request, response) => {
 
